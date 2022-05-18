@@ -186,7 +186,7 @@ footer a {
 
   #eng_col p:nth-child(2n+0),
 #ukr_col p:nth-child(2n+0) {
-    background-color: var(--dark);
+    background-color: #062235;
   }
 
   #ukr_col p .delete-btn {
