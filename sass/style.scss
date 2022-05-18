@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Trueno UltraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trueno UltraLight'), url('../fonts/TruenoUltLt.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Trueno UltraLight';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Trueno UltraLight'), url('../fonts/TruenoUltBlk.woff') format('woff');
+}
+
+:root {
+    --black: #112B3C;
+    --dark: #205375;
+    --light-dark: #3BACB6;
+    --light: #F66B0E;
+    --light-white: #B3E8E5;
+    --white: #f2f2f2;
+
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Trueno UltraLight';
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 7rem 1fr 3rem;
+}
+
+.important {
+    background-color: var(--light);
+    position: relative;
+
+}
+
+.important p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.important input {
+    margin: 1.2rem 0;
+    font-size: 1.2rem;
+}
+
+.important .btn {
+    margin-left: 2rem;
+    padding: 0 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    min-height: 1rem;
+    justify-self: center;
+    align-self: center;
+    letter-spacing: .1rem;
+    border-radius: 100px;
+    border: 1px solid var(--dark);
+    border-color: var(--white);
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.important #hide-top {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+#eng_col,
+#ukr_col {
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#eng_col p {
+    text-align: right;
+}
+
+
+.delete-btn {
+    color: red;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+header {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 1.3rem 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2 {
+    display: block;
+    margin: auto 0;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+main p {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+
+footer {
+    background-color: var(--dark);
+    color: var(--light-white);
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--white);
+}
+
+@media only screen and (max-width: 968px) {
+
+    .important .flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .important input {
+        font-size: 1.6rem;
+        margin: 0 10px;
+    }
+
+    .important .btn {
+        margin: 3rem 2rem;
+        padding: 1rem 6rem;
+    }
+
+    .important #hide-top {
+        display: block;
+        position: absolute;
+        bottom: -25px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 120px;
+        height: 25px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    main .container {
+        width: 100%;
+        margin-top: 20px;
+
+        .flex {
+            gap: 0;
+        }
+    }
+
+    #eng_col,
+    #ukr_col {
+        width: 50%;
+    }
+
+    #eng_col p,
+    #ukr_col p {
+        text-align: center;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    #eng_col p:last-child,
+    #ukr_col p:last-child {
+        margin-bottom: 0;
+    }
+
+    #eng_col p:nth-child(2n+0),
+    #ukr_col p:nth-child(2n+0) {
+        background-color: var(--dark);
+    }
+
+    #ukr_col p .delete-btn {
+        margin-left: 0;
+        position: absolute;
+        left: -25px;
+        bottom: 0px;
+    }
+}
