@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary</title>
+    <link rel="stylesheet" href="./sass/reset.css">
+
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Vocabulary</h1>
+        </div>
+    </header>
+    <main>
+        <div class="important">
+            <form id="form" class="flex hidden">
+                <p class="flex-item">English:</p><input type="text" name="eng">
+                <p class="flex-item">Ukrainian:</p><input type="text" name="ukr">
+                <button class="btn">Add</button>
+            </form>
+            <button id="hide-top">open</button>
+        </div>
+        <div class="container">
+            <div class="flex">
+                <div id="eng_col" class="col"></div>
+                <div id="ukr_col" class="col"></div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>2022 Pocket vocabulary</p>
+        </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
